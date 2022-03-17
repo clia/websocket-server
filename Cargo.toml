@@ -1,0 +1,14 @@
+[package]
+name = "websocket-server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ntex = { version = "0.5", features = ["rustls", "tokio"] }
+ntex-files = { package = "clia-ntex-files", version = "0.1" }
+rustls = "0.20"
+rustls-pemfile = "0.3"
+env_logger = "0.9"
+futures = "0.3"
